@@ -8,3 +8,12 @@ This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/
 <a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
 
 <!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+function findElement(arr, func) {
+  for (var i = 0; i < arr.length; i++){
+    if (func(arr[i])){
+      return arr[i];
+    }
+  }
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
